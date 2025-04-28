@@ -1,0 +1,139 @@
+# =================================== Base settings ====================================
+baseURL = 'https://byteshifters.com/'
+languageCode = 'en-us'
+title = 'Notes'
+theme = "ByteShifters"
+svg = "pfp.png"
+# ======================================================================================
+
+
+
+# =================================== Author settings ==================================
+[params.author]
+  avatar = "pfp.png" # put the file in assets folder; also ensure that image has same height and width
+  intro = "Notes"
+  name = "Notes"
+  description = "Static website for generating notes written in markdown"
+  
+  # Blog Post
+  writterName = "ren"
+  writterLink = "https://0x0060.dev/"
+
+# ======================================================================================
+
+
+# =================================== Homepage settings ==================================
+[params.websiteHome]
+  footerText = " "
+# ======================================================================================
+
+
+# =================================== Browser configuration ============================
+[params.browserconfig]
+TileColor = "#2d89ef" # default windows 10 blue tile color
+# =======================================================================================
+
+
+# =================================== Social Icons (currently commented out) ===========
+#[[params.socialIcons]]
+#name = "github"
+#url = "https://github.com/ByteShifters"
+
+#[[params.socialIcons]]
+#name = "twitter"
+#url = "https://twitter.com/ByteShifters"
+
+#[[params.socialIcons]]
+#name = "instagram"
+#url = "https://instagram.com/ByteShifters"
+
+#[[params.socialIcons]]
+#name = "email"
+#url = "mailto:us@byteshifters.com"
+#languageCode = 'en-us'
+
+#[[params.socialIcons]]
+#name = "Rss"
+#url = "index.xml"
+#languageCode = 'en-us'
+# ======================================================================================
+
+
+# =================================== Default content language =========================
+defaultContentLanguage = "en-gb"
+# ======================================================================================
+
+
+# =================================== Enable emojis globally ===========================
+enableEmoji = true
+# ======================================================================================
+
+
+# =================================== Ignore specific errors ===========================
+ignoreErrors = ["additional-script-loading-error"] # ignore error of loading additional scripts.
+# ======================================================================================
+
+
+# =================================== Markup settings ==================================
+[markup]
+  [markup.highlight]
+    noClasses = false
+    style = 'github-dark'
+    tabWidth = 4
+
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+  [markup.tableOfContents]
+    startLevel = 2 # ToC starts from H2
+    endLevel = 4   # ToC ends at H4
+    ordered = false # generates <ul> instead of <ol>
+# ======================================================================================
+
+
+# =================================== Menu settings ====================================
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 3
+
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 4
+# ======================================================================================
+
+
+# =================================== Taxonomies =======================================
+[taxonomies]
+  tag = 'tags'
+# ======================================================================================
+
+
+# =================================== Additional settings ===============================
+[params]
+  favicon = "transp.png"
+  goToTop = true
+# ======================================================================================
+
+
+# =================================== Pagination settings ==============================
+paginate = 5
+# ======================================================================================
+
+
+# =================================== Build settings ===================================
+_build.list = "never"
+# ======================================================================================
