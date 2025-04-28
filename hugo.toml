@@ -1,8 +1,8 @@
 # =================================== Base settings ====================================
-baseURL = 'https://byteshifters.com/'
+baseURL = 'https://domain.com/'
 languageCode = 'en-us'
-title = 'Notes'
-theme = "ByteShifters"
+title = 'My Blog'
+theme = "Hugo-Awesome-Remastered"
 svg = "pfp.png"
 # ======================================================================================
 
@@ -11,9 +11,9 @@ svg = "pfp.png"
 # =================================== Author settings ==================================
 [params.author]
   avatar = "pfp.png" # put the file in assets folder; also ensure that image has same height and width
-  intro = "Notes"
-  name = "Notes"
-  description = "Static website for generating notes written in markdown"
+  intro = "Blog"
+  name = "0x0060"
+  description = "Blog Description"
   
   # Blog Post
   writterName = "ren"
@@ -24,7 +24,7 @@ svg = "pfp.png"
 
 # =================================== Homepage settings ==================================
 [params.websiteHome]
-  footerText = " "
+  footerText = "Here text or domain.com copyright thing"
 # ======================================================================================
 
 
